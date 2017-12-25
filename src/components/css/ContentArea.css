@@ -1,0 +1,28 @@
+
+.content-area {
+  width: auto; max-width: 890px;
+  height: 100%; margin: 0 auto;
+  padding-top: 60px;
+
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: repeat(12, auto);
+  grid-gap: 12px;
+}
+
+.col-profile {
+  grid-area: 1 / 1 / auto / 2;
+}
+.col-tweet { grid-area: 1 / 2 / -1 / -1; }
+.col-follow { grid-area: 2 / 1 / auto / 2; }
+
+/* Media queries */
+@media screen and (min-width: 1236px) {
+  .content-area {
+    max-width: 1190px;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .col-tweet { grid-area: 1 / 2 / -1 / 3; }
+  .col-follow { grid-area: 1 / 3 / auto / 4; }
+}

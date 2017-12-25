@@ -1,0 +1,17 @@
+
+.twt-btn {
+  background-color: transparent; border: none;
+  border-radius: 100px;
+  font-weight: bold; cursor: pointer;
+
+  transition: all 0.15s ease-in-out;
+}
+.twt-btn-filled {
+  background-color: #48aae6; color: #fff;
+}
+.twt-btn-filled:hover { background-color: #1b95e0; }
+
+.twt-btn-stroked {
+  border: 1px solid #48aae6; color: #48aae6;
+}
+.twt-btn-stroked:hover { background-color: #e8f4fb; }

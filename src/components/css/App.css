@@ -1,0 +1,22 @@
+/* Globals */
+* { box-sizing: border-box; }
+*:focus { outline-width: 0; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial,
+               "Lucida Grande", sans-serif;
+  min-width: 920px;
+  background-color: #fdfdfd;
+}
+
+.text-link {
+  text-decoration: none; font-size: 11px;
+  color: #1b95e0;
+}
+.text-link:hover { text-decoration: underline; }
+
+.card-component {
+  box-shadow: 0 0 5em rgba(0, 0, 0, 0.07);
+  border-radius: 4px; background-color: #fff;
+  padding: 15px;
+}

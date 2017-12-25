@@ -1,0 +1,24 @@
+
+.trends {}
+
+.opcard-header { display: flex; align-items: center; }
+.opcard-header > .title {
+  font-weight: bold; font-size: 18px;
+}
+.opcard-header > .text-link { margin-left: 10px; }
+
+.trend-item {
+  margin: 12px 0; line-height: 18px;
+  font-size: 14px;
+}
+.trend-item > span { display: block; }
+.trend-item > .trend-hash {
+  font-weight: bold; color: #1b95e0;
+  cursor: pointer;
+}
+.trend-item > .trend-text {}
+.trend-item > .trend-stats {
+  font-size: 11px; color: #66757f;
+}
+
+.trends-list {}

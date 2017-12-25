@@ -1,5 +1,9 @@
 
-.follow-card {}
+.follow-card {
+  padding: 0 !important;
+}
+
+.follow-list-wrapper { padding: 15px; padding-bottom: 8px; }
 
 /* Follow item */
 .follow-item {
@@ -9,21 +13,37 @@
   line-height: 20px; position: relative;
 }
 .follow-item:first-child { margin-top: 12px; }
+.follow-item:last-child { border: none; margin-bottom: 0; }
 
 .follow-section { margin-left: 15px; }
-.follow-data {
+.user-header {
   padding-bottom: 5px; font-size: 14px;
   cursor: pointer;
 }
-.follow-data > .name {
+.user-header > .name {
   font-weight: bold;
   transition: color .15s ease-in-out;
 }
-.follow-data:hover > .name { color: #1b95e0; }
-.follow-data > .handle {
-  margin-left: 5px; color: #66757f;
+.user-header:hover > .name { color: #1b95e0; }
+.user-header > .handle { margin-left: 5px; }
+.user-header > .stats, .user-header > .handle {
+  color: #66757f;
 }
+.user-header > .stats {
+  margin-left: 12px; position: relative;
+  font-size: inherit !important;
+}
+.user-header > .stats:before {
+  content: '\00b7';
+  position: absolute; left: -7px;
+}
+.user-header .user-verified { margin-left: 5px; }
 
 .follow-item .close-wrapper {
   position: absolute; top: 2px; right: 0;
+}
+
+.follow-footer {
+  padding: 18px 15px;
+  border-top: 1px solid #e6ecf0;
 }

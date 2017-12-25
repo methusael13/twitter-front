@@ -1,0 +1,17 @@
+
+.tweet-card { padding: 15px 12px; }
+
+.tweet-section { display: flex; }
+.retweet-notif {
+  margin-left: 70px; font-size: 11px;
+  margin-bottom: 8px; color: #66757f;
+}
+
+.tweet-card { cursor: pointer; }
+.tweet-card > .avatar-wrapper { margin: 0; }
+.tweet-card:hover { background-color: #f5f8fa; }
+
+.tweet-data-wrapper { margin-left: 12px; width: 100%; }
+
+.tweet-text { font-size: 0.9em; }
+.tweet-image {}

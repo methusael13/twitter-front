@@ -3,7 +3,7 @@ import ProfileCard from './ProfileCard';
 import Trends from './Trends';
 import FollowCard from './FollowCard';
 import TweetInput from './TweetInput';
-import TweetCard from './TweetCard';
+import TweetFeed from './TweetFeed';
 
 import './css/ContentArea.css';
 
@@ -24,10 +24,7 @@ class ContentArea extends Component {
         <div className="col-tweet">
           <div className="col-tweet-wrapper card-component">
             <TweetInput dpSrc="images/dp.jpg" placeholder="What's happening?" />
-            <TweetCard name="Methusael Murmu" handle="@IamMethusael"
-                       verified={true} text="Merry Christmas everyone!"
-                       avatar="images/dp.jpg" time="12m"
-                       retweet="Elon Musk" />
+            <TweetFeed />
           </div>
         </div>
       </div>

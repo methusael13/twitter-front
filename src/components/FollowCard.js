@@ -24,7 +24,7 @@ export class UserHeader extends Component {
         <span className="name">{this.props.name}</span>
         {
           ((this.props.verified) ?
-           (<i class="fa fa-check-circle user-verified" aria-hidden="true"></i>) : ""
+           (<i className="fa fa-check-circle user-verified" aria-hidden="true"></i>) : ""
           )
         }
         <span className="handle">{this.props.handle}</span>

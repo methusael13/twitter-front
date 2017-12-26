@@ -2,11 +2,10 @@
 .tweet-input-wrapper {
   display: flex; align-items: center;
   background-color: #e8f4fb !important;
-  padding: 10px 15px !important;
+  padding: 10px !important;
+  padding-left: 15px !important;
 }
-.avatar-wrapper {
-  margin-left: 8px;
-}
+.avatar-wrapper { margin-left: 5px; }
 
 .input-wrapper {
   flex: 1; position: relative;

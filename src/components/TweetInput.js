@@ -12,7 +12,7 @@ export default class TweetInput extends Component {
         </span>
         <span className="input-wrapper">
           <input type="text" className="tweet-input" placeholder={this.props.placeholder} />
-          <i class="fa fa-picture-o" aria-hidden="true"></i>
+          <i className="fa fa-picture-o" aria-hidden="true"></i>
         </span>
       </div>
     )

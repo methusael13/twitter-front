@@ -1,17 +1,36 @@
 
-.tweet-card { padding: 15px 12px; }
-
 .tweet-section { display: flex; }
-.retweet-notif {
-  margin-left: 70px; font-size: 11px;
-  margin-bottom: 8px; color: #66757f;
-}
 
-.tweet-card { cursor: pointer; }
-.tweet-card > .avatar-wrapper { margin: 0; }
+.retweet-notif {
+  font-size: 11px; color: #66757f;
+  margin-bottom: 8px; margin-left: 5.6em;
+  position: relative;
+}
+.retweet-notif > .text {}
+.retweet-notif > .icon { position: absolute; left: -2.2em }
+
+.tweet-card {
+  padding: 15px 12px; cursor: pointer;
+  border-top: 1px solid #e6ecf0;
+}
+.tweet-card .avatar-wrapper { margin: 0 !important; }
 .tweet-card:hover { background-color: #f5f8fa; }
 
-.tweet-data-wrapper { margin-left: 12px; width: 100%; }
+.tweet-data-wrapper {
+  margin-left: 12px; width: 100%;
+  position: relative;
+}
 
 .tweet-text { font-size: 0.9em; }
-.tweet-image {}
+.tweet-image {
+  background-position: 0 50%;
+  background-size: contain;
+  margin: 10px 0; border-radius: 4px;
+  background-repeat: no-repeat;
+}
+
+.tweet-data-wrapper .tweet-card-options {
+  position: absolute; top: 0; right: 0;
+  color: #ccd6dd; font-size: 20px;
+  transform: translateY(-0.15em);
+}

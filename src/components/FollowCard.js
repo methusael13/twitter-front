@@ -13,7 +13,8 @@ export class UserHeader extends Component {
     this.stats = undefined;
     if (this.props.stats) {
       this.stats = this.props.stats.map((item, idx) => {
-        return <span className="stats text-link" key={"user-header-stat-" + idx}>{item}</span>;
+        return <span className="stats text-link"
+                     key={"user-header-stat-" + idx}>{item}</span>;
       });
     }
   }

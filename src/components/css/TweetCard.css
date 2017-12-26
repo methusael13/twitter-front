@@ -14,6 +14,10 @@
   border-top: 1px solid #e6ecf0;
 }
 .tweet-card .avatar-wrapper { margin: 0 !important; }
+.tweet-card .avatar-circle {
+  /* Workaround for edge bleeding in circular images */
+  background-repeat: no-repeat !important;
+}
 .tweet-card:hover { background-color: #f5f8fa; }
 
 .tweet-data-wrapper {

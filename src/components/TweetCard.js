@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { UserHeader } from './FollowCard';
 import AvatarCircle from './Avatar';
 
-import './css/TwitterCard.css';
+import './css/TweetCard.css';
 
 class TweedDataCard extends Component {
   constructor(props) {

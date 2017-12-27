@@ -1,12 +1,12 @@
 .search-form > form { position: relative; }
 
 .search-inp {
-  padding: 7px 15px;
+  padding: 0.4375rem 0.9375rem;
   border: 2px solid #e6ecf073;
   background-color: #f5f8fa;
-  min-width: 230px; border-radius: 100px;
+  min-width: 14.375rem; border-radius: 200px;
   font-size: 75%; color: #333;
-  padding-right: 35px;
+  padding-right: 2.1875rem;
 
   transition: all .2s ease-in-out;
 }
@@ -19,7 +19,7 @@
 .search-inp:focus::placeholder { color: #bbb; }
 
 .search-btn {
-  position: absolute; right: 12px; top: 50%;
+  position: absolute; right: 0.75rem; top: 50%;
   transform: translateY(-50%);
   background: transparent; color: #999;
   cursor: pointer;

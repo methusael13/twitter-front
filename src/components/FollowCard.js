@@ -3,6 +3,7 @@ import { OpCardHeader } from './Trends';
 import AvatarCircle from './Avatar';
 import { ButtonStroked } from './Button';
 import { CloseButton } from './UtilComponents';
+import { CardFooterData } from './FooterCard';
 
 import './css/FollowCard.css';
 
@@ -39,15 +40,16 @@ export class FollowItem extends Component {
   render() {
     return (
       <div className="follow-item">
-        <AvatarCircle size="50px" src={this.props.avatar} />
+        <AvatarCircle size="3.125rem" src={this.props.avatar} />
         <div className="follow-section">
           <UserHeader name={this.props.name} handle={this.props.handle}
                       verified={this.props.verified} />
           <div className="follow-btn">
-            <ButtonStroked fontSize="12px" padTB="5px" padLR="25px" value="Follow" />
+            <ButtonStroked fontSize="0.75rem" padTB="0.3125rem"
+                           padLR="1.5625rem" value="Follow" />
           </div>
         </div>
-        <CloseButton size="10px" />
+        <CloseButton size="0.625rem" />
       </div>
     )
   }
@@ -87,9 +89,7 @@ class FollowCard extends Component {
           <OpCardHeader title="Who to follow" funcs={["Refresh", "View all"]} />
           <FollowList />
         </div>
-        <div className="follow-footer">
-          <a className="text-link" href="#">Connect other address books</a>
-        </div>
+        <CardFooterData icon="fa-address-book-o" text="Connect other address books" />
       </div>
     )
   }

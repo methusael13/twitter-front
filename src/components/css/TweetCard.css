@@ -2,15 +2,15 @@
 .tweet-section { display: flex; }
 
 .retweet-notif {
-  font-size: 11px; color: #66757f;
-  margin-bottom: 8px; margin-left: 5.6em;
+  font-size: 0.6875rem; color: #66757f;
+  margin-bottom: 0.5rem; margin-left: 5.6em;
   position: relative;
 }
 .retweet-notif > .text {}
 .retweet-notif > .icon { position: absolute; left: -2.2em }
 
 .tweet-card {
-  padding: 15px 12px; cursor: pointer;
+  padding: 0.9375rem 0.75rem; cursor: pointer;
   border-top: 1px solid #e6ecf0;
 }
 .tweet-card .avatar-wrapper { margin: 0 !important; }
@@ -21,7 +21,7 @@
 .tweet-card:hover { background-color: #f5f8fa; }
 
 .tweet-data-wrapper {
-  margin-left: 12px; width: 100%;
+  margin-left: 0.75rem; width: 100%;
   position: relative;
 }
 
@@ -29,12 +29,12 @@
 .tweet-image {
   background-position: 0 50%;
   background-size: contain;
-  margin: 10px 0; border-radius: 4px;
+  margin: 0.625rem 0; border-radius: 4px;
   background-repeat: no-repeat;
 }
 
 .tweet-data-wrapper .tweet-card-options {
   position: absolute; top: 0; right: 0;
-  color: #ccd6dd; font-size: 20px;
+  color: #ccd6dd; font-size: 1.25rem;
   transform: translateY(-0.15em);
 }

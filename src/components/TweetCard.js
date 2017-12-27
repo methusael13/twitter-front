@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { UserHeader } from './FollowCard';
 import AvatarCircle from './Avatar';
+import TweetActions from './TweetActions';
 
 import './css/TweetCard.css';
 
@@ -40,6 +41,8 @@ class TweedDataCard extends Component {
       </div>
     );
 
+    let stats = this.props.stats;
+
     return (
       <div className="tweet-data-wrapper">
         <UserHeader name={this.props.name} handle={this.props.handle}
@@ -51,6 +54,8 @@ class TweedDataCard extends Component {
         <span className="tweet-card-options">
           <i className="fa fa-angle-down" aria-hidden="true"></i>
         </span>
+        <TweetActions comments={stats.comments} retweets={stats.retweets}
+                      likes={stats.likes} />
       </div>
     )
   }
@@ -80,12 +85,12 @@ class TweetCard extends Component {
         }
         <div className="tweet-section">
           <div className="avatar-wrapper">
-            <AvatarCircle size="50px" src={this.props.avatar} />
+            <AvatarCircle size="3.125rem" src={this.props.avatar} />
           </div>
           <TweedDataCard name={this.props.name} handle={this.props.handle}
                          verified={this.props.verified}
                          text={this.props.text} image={this.props.image}
-                         time={this.props.time} />
+                         time={this.props.time} stats={this.props.stats} />
         </div>
       </div>
     )

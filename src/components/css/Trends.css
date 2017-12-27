@@ -3,13 +3,13 @@
 
 .opcard-header { display: flex; align-items: center; }
 .opcard-header > .title {
-  font-weight: bold; font-size: 18px;
+  font-weight: bold; font-size: 1.125rem;
 }
-.opcard-header > .text-link { margin-left: 10px; }
+.opcard-header > .text-link { margin-left: 0.625rem; }
 
 .trend-item {
-  margin: 12px 0; line-height: 18px;
-  font-size: 14px;
+  margin: 0.75rem 0; line-height: 1.125rem;
+  font-size: 0.875rem;
 }
 .trend-item > span { display: block; }
 .trend-item > .trend-hash {
@@ -18,7 +18,7 @@
 }
 .trend-item > .trend-text {}
 .trend-item > .trend-stats {
-  font-size: 11px; color: #66757f;
+  font-size: 0.6875rem; color: #66757f;
 }
 
 .trends-list {}

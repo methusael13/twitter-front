@@ -1,0 +1,26 @@
+
+.tweet-action-list {
+  display: flex;
+  margin-top: 1em; margin-left: 0.2em;
+  color: #66757f;
+}
+
+.tweet-action-item {
+  min-width: 5.15em;
+  display: flex; align-items: center;
+
+  transition: color .15s ease-in-out;
+}
+.tweet-action-item > .action-icon {}
+.tweet-action-item > .action-stat {
+  font-size: 0.8em; font-weight: bold;
+  padding-left: 1em; user-select: none;
+  transform: translateY(-0.08em);
+}
+
+.tweet-action-comments:hover,
+.tweet-action-messages:hover { color: #48aae6; }
+.tweet-action-retweets:hover { color: #17bf63; }
+.tweet-action-likes:hover, .tweet-like-active {
+  color: #ff4949;
+}

@@ -8,7 +8,7 @@ export default class TweetInput extends Component {
     return (
       <div className="tweet-input-wrapper">
         <span className="avatar-wrapper">
-          <AvatarCircle size="32px" src={this.props.dpSrc} />
+          <AvatarCircle size="2rem" src={this.props.dpSrc} />
         </span>
         <span className="input-wrapper">
           <input type="text" className="tweet-input" placeholder={this.props.placeholder} />

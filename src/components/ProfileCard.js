@@ -24,7 +24,7 @@ class ProfileCard extends Component {
       <div className="profile-card card-component">
         <div className="profile-cover" style={coverStyle}></div>
         <div className="profile-data">
-          <AvatarCircle size="75px" src={this.props.dpSrc} />
+          <AvatarCircle size="4.6875rem" src={this.props.dpSrc} />
           <div className="profile-handle">
             <span className="name">{this.props.name}</span>
             <span className="handle">{this.props.handle}</span>

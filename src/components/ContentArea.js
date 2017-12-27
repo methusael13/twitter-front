@@ -4,6 +4,7 @@ import Trends from './Trends';
 import FollowCard from './FollowCard';
 import TweetInput from './TweetInput';
 import TweetFeed from './TweetFeed';
+import FooterCard from './FooterCard';
 
 import './css/ContentArea.css';
 
@@ -19,7 +20,7 @@ class ContentArea extends Component {
           <Trends />
         </div>
         <div className="col-follow">
-          <FollowCard />
+          <FollowCard /><FooterCard />
         </div>
         <div className="col-tweet">
           <div className="col-tweet-wrapper card-component">

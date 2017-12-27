@@ -1,7 +1,6 @@
 
 .profile-card {
-  margin-bottom: 12px;
-  padding: 0 !important;
+  padding: 0 !important; margin-bottom: 0.8rem;
 }
 
 .profile-card .profile-cover {
@@ -9,15 +8,12 @@
   background-size: cover;
   background-color: #48aae6;
   border-radius: 4px 4px 0 0;
-  height: 96px;
+  height: 6rem;
 }
 
-.profile-data {
-  padding-top: 50px;
-  position: relative;
-}
+.profile-data { padding-top: 3.125rem; position: relative; }
 
-.profile-stats { padding: 15px; }
+.profile-stats { padding: 0.9375rem; }
 .profile-stats-list {
   margin: 0; padding: 0;
   list-style-type: none;
@@ -28,7 +24,7 @@
 .profile-stats-item > * { display: block; }
 .profile-stats-item > .type {
   color: #66757f; font-weight: bold;
-  font-size: 12px; line-height: 22px;
+  font-size: 0.75rem; line-height: 1.375rem;
   transition: all .15s ease-in-out;
 }
 .profile-stats-item:hover > .type { color: #1b95e0; }
@@ -39,14 +35,14 @@
 
 .profile-handle {
   position: absolute;
-  top: 12px; left: 100px;
+  top: 0.75rem; left: 6.25rem;
 }
 .profile-handle > * { display: block; }
 .profile-handle > .name { font-weight: bold; }
-.profile-handle > .handle { font-size: 14px; color: #66757f; }
+.profile-handle > .handle { font-size: 0.875rem; color: #66757f; }
 
 .profile-data .avatar-circle {
   position: absolute;
-  top: -30px; left: 10px;
-  border: 3px solid #fff;
+  top: -1.875rem; left: 0.625rem;
+  border: 0.1825rem solid #fff;
 }

@@ -1,23 +1,24 @@
 
 .follow-card {
-  padding: 0 !important;
+  padding: 0 !important; margin-bottom: 0.8rem;
 }
+.follow-card .card-footer { padding-left: 1.14em; }
 
-.follow-list-wrapper { padding: 15px; padding-bottom: 8px; }
+.follow-list-wrapper { padding: 0.9375rem; padding-bottom: 0.5rem; }
 
 /* Follow item */
 .follow-item {
-  margin-bottom: 12px; padding-bottom: 9px;
+  margin-bottom: 0.75rem; padding-bottom: 0.5625rem;
   display: flex; align-items: center;
   border-bottom: 1px solid #e6ecf0;
-  line-height: 20px; position: relative;
+  line-height: 1.25rem; position: relative;
 }
-.follow-item:first-child { margin-top: 12px; }
+.follow-item:first-child { margin-top: 0.75rem; }
 .follow-item:last-child { border: none; margin-bottom: 0; }
 
-.follow-section { margin-left: 15px; }
+.follow-section { margin-left: 0.9375rem; }
 .user-header {
-  padding-bottom: 5px; font-size: 14px;
+  padding-bottom: 0.3125rem; font-size: 0.875rem;
   cursor: pointer;
 }
 .user-header > .name {
@@ -25,25 +26,20 @@
   transition: color .15s ease-in-out;
 }
 .user-header:hover > .name { color: #1b95e0; }
-.user-header > .handle { margin-left: 5px; }
+.user-header > .handle { margin-left: 0.3125rem; }
 .user-header > .stats, .user-header > .handle {
   color: #66757f;
 }
 .user-header > .stats {
-  margin-left: 12px; position: relative;
+  margin-left: 0.75rem; position: relative;
   font-size: inherit !important;
 }
 .user-header > .stats:before {
   content: '\00b7';
-  position: absolute; left: -7px;
+  position: absolute; left: -0.4375rem;
 }
-.user-header .user-verified { margin-left: 5px; }
+.user-header .user-verified { margin-left: 0.3125rem; }
 
 .follow-item .close-wrapper {
-  position: absolute; top: 2px; right: 0;
-}
-
-.follow-footer {
-  padding: 18px 15px;
-  border-top: 1px solid #e6ecf0;
+  position: absolute; top: 0.125rem; right: 0;
 }

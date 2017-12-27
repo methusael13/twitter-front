@@ -1,0 +1,23 @@
+/* Global card footer style */
+.card-footer {
+  padding: 1.125rem 0.9375rem;
+  border-top: 1px solid #e6ecf0;
+}
+.card-footer .footer-text-icon {
+  padding-right: 0.6em; font-size: 1em;
+}
+.footer-text-icon > i { transform: translateY(0.15em); }
+
+/* Tweeter footer card */
+.footer-links-card { padding: 0 !important; }
+.footer-data {
+  padding: 0.92rem 0.7rem;
+  display: flex; flex-wrap: wrap;
+  line-height: 1.7em;
+}
+
+.footer-data, .footer-links-card .footer-link {
+  color: #66757f; font-size: 0.7rem;
+}
+.footer-data > span { padding: 0 0.5em; }
+.footer-links-card .card-footer { padding-left: 1.12rem; }

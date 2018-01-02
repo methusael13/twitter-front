@@ -45,9 +45,7 @@
   border-color: #1b95e0 !important;
 }
 
-.nav-link > .icon {
-  font-size: 1.125rem; padding-right: 0.3125rem;
-}
+.nav-link > .icon { font-size: 1.125rem; }
 .nav-link > .text { font-weight: bold; }
 
 .header-nav .nav-link > .text {
@@ -79,4 +77,5 @@
   }
 
   .header-nav .nav-link > .text { display: inline; }
+  .nav-link > .icon { padding-right: 0.3125rem; }
 }

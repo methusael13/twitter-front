@@ -9,24 +9,32 @@ class TweedDataCard extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { imgHeight: 0 };
     this.tweetImage = this.props.image ? this.props.image : undefined;
+    this.state = { imgHeight: 0 }
     this.styles = {};
 
     if (this.tweetImage)
       this.styles.backgroundImage = "url(" + this.tweetImage + ")";
   }
 
-  componentDidMount() {
+  computeImageHeight() {
     if (!this.imageDOM) return;
 
     // Calculate image height based on parent width
     let dummyImg = new Image(); dummyImg.src = this.tweetImage;
-    let aspect = dummyImg.naturalHeight / dummyImg.naturalWidth;
-    let newHeight = Math.round(this.imageDOM.offsetWidth * aspect);
+    dummyImg.onload = () => {
+      let aspect = dummyImg.naturalHeight / dummyImg.naturalWidth;
+      let newHeight = Math.round(this.imageDOM.offsetWidth * aspect);
 
-    // Update state to reflect new image height
-    this.setState({ imgHeight: newHeight });
+      // Update state to reflect new image height
+      this.setState({ imgHeight: newHeight });
+    }
+  }
+
+  componentDidMount() { this.computeImageHeight(); }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.state.imgHeight !== nextState.imgHeight;
   }
 
   render() {

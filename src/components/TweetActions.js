@@ -66,8 +66,8 @@ class LikeActionItem extends TweetActionItem {
   getActionIcon(performed) {
     let _icon = this.props.icon;
     if (performed) {
-      // FontAwesome has the convention of using
-      // a '-o' suffix for non-filled icons. So we remove
+      // FontAwesome has the convention of using a
+      // '-o' suffix for non-filled icons. So we remove it
       // from the current icon in case a like was performed.
       _icon = this.props.icon.replace(/-o$/, "");
     }

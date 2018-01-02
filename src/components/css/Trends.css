@@ -5,7 +5,14 @@
 .opcard-header > .title {
   font-weight: bold; font-size: 1.125rem;
 }
-.opcard-header > .text-link { margin-left: 0.625rem; }
+.opcard-header > .text-link {
+  margin-left: 0.625rem; position: relative;
+}
+.opcard-header > .text-link:before {
+  content: '\B7';
+  position: absolute; left: -0.45em;
+  font-size: 1.2em; color: #bbb;
+}
 
 .trend-item {
   margin: 0.75rem 0; line-height: 1.125rem;

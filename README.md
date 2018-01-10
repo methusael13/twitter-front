@@ -1,5 +1,5 @@
 # Twitter Front
-Custom implementation of the Twitter front page with ReactJS.
+Custom implementation of the Twitter front page with ReactJS.<br/>
 Live demo: https://ui.bereave49.hasura-app.io/
 
 ### Building

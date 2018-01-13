@@ -83,7 +83,7 @@ class HeaderSearchpanel extends Component {
     return (
       <div className="header-nav-right">
         <SearchBar />
-        <AvatarCircle size="2rem" src="images/dp.jpg" />
+        <AvatarCircle size="2rem" src="/images/dp.jpg" />
         <ButtonFilled fontSize="0.875rem" padTB="0.5625rem" padLR="1.08rem" value="Tweet" />
       </div>
     );

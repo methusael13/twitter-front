@@ -15,8 +15,8 @@ class ContentArea extends Component {
         <div className="col-profile">
           <ProfileCard name="Methusael" handle="@IamMethusael"
                        tweets="20" following="64" followers="35"
-                       coverSrc="images/cover.jpg"
-                       dpSrc="images/dp.jpg" />
+                       coverSrc="/images/cover.jpg"
+                       dpSrc="/images/dp.jpg" />
           <Trends />
         </div>
         <div className="col-follow">
@@ -24,7 +24,7 @@ class ContentArea extends Component {
         </div>
         <div className="col-tweet">
           <div className="col-tweet-wrapper card-component">
-            <TweetInput dpSrc="images/dp.jpg" placeholder="What's happening?" />
+            <TweetInput dpSrc="/images/dp.jpg" placeholder="What's happening?" />
             <TweetFeed />
           </div>
         </div>

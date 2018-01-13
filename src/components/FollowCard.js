@@ -73,7 +73,7 @@ class FollowList extends Component {
       {
         this.list.map((item, idx) => (
           <FollowItem name={item[0]} handle={item[1]} key={"follow-item-" + idx}
-                      avatar={"images/" + item[2]} verified={item[3]} />
+                      avatar={"/images/" + item[2]} verified={item[3]} />
         ))
       }
       </div>

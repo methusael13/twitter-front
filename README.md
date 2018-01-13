@@ -1,6 +1,6 @@
 # Twitter Front
 Custom implementation of the Twitter front page with ReactJS.<br/>
-Live demo: https://ui.bereave49.hasura-app.io/
+Live demo: <a href="https://ui.bereave49.hasura-app.io/" target="_blank">https://ui.bereave49.hasura-app.io/</a>
 
 ### Building
 Download `nodejs` and `npm` for your platform:
